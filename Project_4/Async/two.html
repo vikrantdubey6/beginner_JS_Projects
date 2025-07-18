@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2nd Async code </title>
+</head>
+<body>
+    <h1>this Text gonna toggle when you click start button</h1>
+   
+    <button id="stop">Stop</button>
+    <button id= "start">Start</button>
+    
+</body>
+<script>
+
+    let intervalId;
+
+const textchanger = function(){
+    // document.querySelector('h1').innerHTML = "text is toggled"
+    console.log("i m vikrant");
+    
+}
+
+document.querySelector('#start').addEventListener('click', function(){
+    if(intervalId = true){
+        intervalId = setInterval(textchanger,1000)
+    }
+})
+
+document.querySelector('#stop').addEventListener('click', function(){
+    clearInterval(intervalId)
+    // intervalId = ''
+    console.log('Stopped')
+})
+
+
+
+
+// document.querySelector('#start').addEventListener('click', function(e) {
+//     if (!intervalId) {
+//         intervalId = setInterval(textchanger, 2000);
+//     }
+// });
+// document.querySelector('#stop').addEventListener('click', function(){
+//     clearInterval(intervalId);
+//     intervalId = null;
+//     console.log("STOPPED");
+// });
+
+
+
+
+
+
+
+
+
+
+
+
+//     const saydate = function(){
+//         console.log('vikrant is here baby!',Date.now())
+//     }
+//   const si = setInterval(saydate,1000)
+
+//     clearInterval(si)
+</script>
+</html>

@@ -27,4 +27,6 @@ document.querySelector('#start').addEventListener('click', startChangingColor)
 
 document.querySelector('#stop').addEventListener('click', stopChangingColor)
 
+
+
 // console.log(Math.floor(Math.randon() * 16)) 
